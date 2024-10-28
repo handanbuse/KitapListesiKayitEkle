@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/ktp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AddbookActivity2">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:onClick="resimsec"
+            android:src="@color/black"
+            android:scaleType="fitXY"
+            android:id="@+id/addbook_img">
+        </ImageView>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="Kitap İsmini Giriniz"
+            android:id="@+id/kitapİsmi_edit"
+            android:textAlignment="center"></EditText>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Kitap Yazarını Giriniz"
+            android:id="@+id/kitapYazar_edit2"
+            android:textAlignment="center"></EditText>
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textImeMultiLine"
+            android:hint="Kitap Özetini  Giriniz"
+            android:id="@+id/kitapözet_edit3"></EditText>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:onClick="kitapKaydet"
+            android:id="@+id/bookactivity_btn"
+            android:textSize="19sp"
+            android:layout_marginTop="25dp"
+            android:text="Kaydet"
+
+            android:textAllCaps="false"
+            android:background="@color/kaydetBtn" ></Button>
+
+
+
+
+
+
+
+    </LinearLayout>
+    
+
+</RelativeLayout>
